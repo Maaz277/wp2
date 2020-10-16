@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    height: 100vh;
+    background-image: url("black.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.nav{
+    height: 80px;
+    background-color: rgba(255,255,255,0.2);
+    align-items: center;
+    justify-content: center;
+    padding: 1% 2% ;
+}
+
+.nav h4{
+    font-size: 40px;
+    color: white;
+    font-style: italic;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    float: right;
+    height: 50px;
+    align-items: center;
+    width: 30%;
+}
+
+.right h5 a{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.right h5 a:hover{
+    text-decoration: underline;
+    text-decoration-color: white
+}
+
+.container, .home, .cv{
+    padding: 3% 5% 5%;
+}
+
+.container h1, .home h1{
+    color:#00BFFF;
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 50;
+}
+
+
+.content{
+    padding: 2%;
+    font-family: 'Poppins', sans-serif;
+    color: #00BFFF;
+    border: 1px solid #00BFFF;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+
+.content h2{
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: #00BFFF
+}
+
+.content h3{
+    font-size: 20px;
+    padding-top: 3%
+}
+
+.home h2{
+    font-size: 120px;
+    color:#00BFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.home h3{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    color:#00BFFF;
+    margin-top: 20px
+}
+
+.name span{
+    font-size: 60px;
+    color:#00BFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 38%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.contact span{
+    font-size: 25px;
+    color:#00BFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.obj h2{
+    font-size: 30px;
+    color:#00BFFF;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #00BFFF;
+    margin-top: 50px;
+}
+
+.obj h1{
+    font-size: 20px;
+    color:#00BFFF;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+.obj h3{
+    font-size: 16px;
+    color:#00BFFF;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .prev{
+      float: left;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev{
+      left: 0;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  .mySlides {display: none}
+.slideshow-container img {vertical-align: middle;}
+
+.slide-heading h2, .bio h2{
+    color: #00BFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: #00BFFF;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+
+.pic{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #00BFFF;
+    margin: auto;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.pic img{
+    float: left;
+    margin-right: 25px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.pic h6{
+    font-size: 20px;
+    color: #00BFFF;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: #00BFFF
+}
+
+.pic h5{
+    font-size: 40px;
+    color: #00BFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.link{
+    padding: 2%;
+    font-family: 'Poppins', sans-serif;
+    color: #00BFFF;
+    border: 1px solid #00BFFF;
+    border-radius: 10px;
+    margin-top: 5%;
+    width: 70%;
+    margin: auto;
+}
+
+.link h3{
+    font-size: 40px;
+}
+
+.link h3 a{
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #00BFFF;
+    text-decoration-color: #00BFFF
+}
+
+
